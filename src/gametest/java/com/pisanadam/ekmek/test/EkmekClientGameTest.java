@@ -122,6 +122,49 @@ public class EkmekClientGameTest implements FabricClientGameTest {
 			});
 			ctx.waitTicks(40);
 
+			// --- taş fırın yalnızca ekmek pişirir ---
+			server.runOnServer(s -> {
+				ServerPlayer player = s.getPlayerList().getPlayers().get(0);
+				StoneOvenBlockEntity oven = (StoneOvenBlockEntity) s.overworld().getBlockEntity(ovenPos);
+				if (oven.canPlaceItem(StoneOvenBlockEntity.SLOT_INPUT, new ItemStack(Items.WATER_BUCKET))
+					|| oven.canPlaceItem(StoneOvenBlockEntity.SLOT_INPUT, new ItemStack(ModItems.BERRY_MUST))
+					|| oven.canPlaceItem(StoneOvenBlockEntity.SLOT_INPUT, new ItemStack(Items.IRON_ORE))) {
+					throw new AssertionError("Taş fırın ekmek dışı bir eşyayı kabul etti");
+				}
+				if (!oven.canPlaceItem(StoneOvenBlockEntity.SLOT_INPUT, new ItemStack(ModItems.LAVASH.dough()))) {
+					throw new AssertionError("Taş fırın lavaş hamurunu kabul etmedi");
+				}
+				com.pisanadam.ekmek.block.entity.StoneOvenMenu menu = new com.pisanadam.ekmek.block.entity.StoneOvenMenu(
+					0, player.getInventory(), oven, new net.minecraft.world.inventory.SimpleContainerData(4));
+				if (menu.getSlot(0).mayPlace(new ItemStack(Items.IRON_ORE)) || !menu.getSlot(0).mayPlace(new ItemStack(ModItems.PITA.proofed()))) {
+					throw new AssertionError("Fırın menüsünün giriş yuvası yanlış eşyaları kabul ediyor");
+				}
+			});
+
+			// --- kaynayan kazan: pekmez ve tuz ---
+			BlockPos cauldronPos = new BlockPos(x + 3, y, z + 3);
+			server.runOnServer(s -> {
+				ServerPlayer player = s.getPlayerList().getPlayers().get(0);
+				net.minecraft.world.phys.BlockHitResult hit = new net.minecraft.world.phys.BlockHitResult(
+					net.minecraft.world.phys.Vec3.atCenterOf(cauldronPos), net.minecraft.core.Direction.UP, cauldronPos, false);
+				player.getInventory().clearContent();
+				player.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND, new ItemStack(ModItems.BERRY_MUST));
+				net.fabricmc.fabric.api.event.player.UseBlockCallback.EVENT.invoker().interact(player, player.level(), net.minecraft.world.InteractionHand.MAIN_HAND, hit);
+				if (!player.getInventory().contains(new ItemStack(ModItems.PEKMEZ))) {
+					throw new AssertionError("Kaynayan kazan şırayı pekmeze çevirmedi");
+				}
+				player.getInventory().clearContent();
+				net.fabricmc.fabric.api.event.player.UseBlockCallback.EVENT.invoker().interact(player, player.level(), net.minecraft.world.InteractionHand.MAIN_HAND, hit);
+				if (!player.getInventory().contains(new ItemStack(ModItems.SALT))) {
+					throw new AssertionError("Kaynayan kazan tuz vermedi");
+				}
+				int waterLevel = s.overworld().getBlockState(cauldronPos).getValue(net.minecraft.world.level.block.LayeredCauldronBlock.LEVEL);
+				if (waterLevel != 2) {
+					throw new AssertionError("Tuz yapınca kazan suyu azalmadı: " + waterLevel);
+				}
+				player.getInventory().clearContent();
+			});
+
 			// --- loot tablosu: olgun çavdar kırılınca çavdar düşmeli ---
 			BlockPos ryePos = new BlockPos(x + 1, y, z + 5);
 			server.runOnServer(s -> {

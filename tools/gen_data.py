@@ -95,7 +95,7 @@ INTERMEDIATE = {
 INGREDIENTS = {
     "hand_mill": ("El Değirmeni", "Hand Mill", "Tahılı una, zeytini yağa öğütür (tükenmez)", "Grinds grain into flour and olives into oil (reusable)"),
     "sieve": ("Elek", "Sieve", "Tam buğday unundan kepeği ayırıp beyaz un yapar", "Sifts the bran out of whole wheat flour"),
-    "stone_oven": ("Taş Fırın", "Stone Oven", "Ekmekler yalnızca burada pişer. Yakıt gerekir", "Breads can only be baked here. Needs fuel"),
+    "stone_oven": ("Taş Fırın", "Stone Oven", "Sadece ekmek pişirir; ekmekler de yalnızca burada pişer. Yakıt gerekir", "Bakes bread and nothing else; bread can only be baked here. Needs fuel"),
     "proofing_trough": ("Mayalama Teknesi", "Proofing Trough", "Hamuru koy, mayalanmasını bekle. Yakında ateş varsa daha hızlı", "Put dough in and let it rise. Faster near a fire"),
     "rye_seeds": ("Çavdar Tohumu", "Rye Seeds", "Çimenlerden düşer. Toprağa ek", "Drops from grass. Plant on farmland"),
     "rye": ("Çavdar", "Rye", None, None),
@@ -107,13 +107,13 @@ INGREDIENTS = {
     "white_flour": ("Beyaz Un", "White Flour", "Tam Buğday Unu + Elek", "Whole Wheat Flour + Sieve"),
     "rye_flour": ("Çavdar Unu", "Rye Flour", "Çavdar + El Değirmeni", "Rye + Hand Mill"),
     "corn_flour": ("Mısır Unu", "Corn Flour", "Mısır + El Değirmeni", "Corn + Hand Mill"),
-    "salt": ("Tuz", "Salt", "Su kovasını Taş Fırında buharlaştır", "Evaporate a water bucket in a Stone Oven"),
+    "salt": ("Tuz", "Salt", "Altında ateş olan su kazanına boş elle sağ tıkla: su buharlaşır, tuz kalır", "Right-click a water cauldron with fire below using an empty hand: the water evaporates, leaving salt"),
     "yeast": ("Maya", "Yeast", "Meyve, şeker, un ve sudan üretilen yaş maya", "Fresh yeast cultured from fruit, sugar, flour and water"),
     "baking_soda": ("Kabartma Tozu", "Baking Soda", "Mayasız kabartma: mısır ekmeği için", "Chemical leavener for cornbread"),
     "butter": ("Tereyağı", "Butter", "Sütü çalkalayarak elde edilir", "Churned from milk"),
     "yogurt": ("Yoğurt", "Yogurt", "Naan hamuru için; yenebilir", "Used in naan; edible"),
     "olive_oil": ("Zeytinyağı", "Olive Oil", "Zeytin + El Değirmeni + Cam Şişe", "Olives + Hand Mill + Glass Bottle"),
-    "berry_must": ("Meyve Şırası", "Berry Must", "Taş Fırında kaynatınca pekmez olur", "Boil it in a Stone Oven to make pekmez"),
+    "berry_must": ("Meyve Şırası", "Berry Must", "Altında ateş olan kazana sağ tıklayıp kaynat: pekmez olur", "Right-click a cauldron with fire below to boil it into pekmez"),
     "pekmez": ("Pekmez", "Pekmez (Molasses)", "Simidin kızarık rengini verir", "Gives simit its glossy dark crust"),
     "sourdough_starter_hungry": ("Aç Ekşi Maya", "Hungry Sourdough Starter", "Un ve suyla besle", "Feed it flour and water"),
     "sourdough_starter_fed": ("Beslenmiş Ekşi Maya", "Fed Sourdough Starter", "Mayalama Teknesinde kabarmasını bekle", "Let it rise in a Proofing Trough"),
@@ -414,7 +414,8 @@ def lang():
     add(f"message.{NS}.trough.proofing", "%s mayalanıyor... %%%s", "%s is rising... %s%%")
     add(f"message.{NS}.trough.proofing_warm", "%s ılık ortamda hızla mayalanıyor... %%%s", "%s is rising quickly in the warmth... %s%%")
     add(f"message.{NS}.trough.ready", "%s hazır! Almak için boş elle sağ tıkla.", "%s is ready! Right-click with an empty hand to take it.")
-    add(f"message.{NS}.cauldron.not_boiling", "Su kaynamıyor! Kazanın altına ateş, kamp ateşi veya magma koy.", "The water isn't boiling! Put a fire, campfire or magma below the cauldron.")
+    add(f"message.{NS}.cauldron.not_boiling", "Kazan kaynamıyor! Altına ateş, kamp ateşi veya magma koy.", "The cauldron isn't boiling! Put a fire, campfire or magma below it.")
+    add(f"message.{NS}.cauldron.salt", "Su buharlaştı, kazanın dibinde tuz kaldı.", "The water boiled away, leaving salt behind.")
 
     # easter egg'ler
     add(f"message.{NS}.easter.nimet_pickup", "Ekmek nimettir! Yerden alıp öptün ve alnına koydun.", "Bread is a blessing! You kissed it and touched it to your forehead.")

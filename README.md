@@ -32,8 +32,8 @@ Hamur ──(Mayalama Teknesi)──► Mayalanmış Hamur ──(Taş Fırın +
    Eğilip sağ tıklayınca yüzdeyi gösterir. Hamur kabarınca tekne bezle örtülü görünür;
    boş elle sağ tıklayıp al. 2 blok yakında yanan fırın, kamp ateşi, ateş veya lav varsa
    hamur **iki kat hızlı** mayalanır (gerçekte de ılık ortam mayalanmayı hızlandırır).
-5. **Pişir** – Mayalanmış hamuru **Taş Fırın**'a koy, alta yakıt ekle. Ekmekler normal fırında
-   veya tütsüleyicide pişmez!
+5. **Pişir** – Mayalanmış hamuru **Taş Fırın**'a koy, alta yakıt ekle. Taş fırın **sadece ekmek**
+   pişirir (giriş yuvası başka bir şey kabul etmez); ekmekler de normal fırında veya tütsüleyicide pişmez!
 
 ### Ekşi maya (sourdough starter)
 
@@ -64,8 +64,15 @@ Hamur ──(Mayalama Teknesi)──► Mayalanmış Hamur ──(Taş Fırın +
 | 16 | **Mısır Ekmeği** | 2 Mısır Unu, Beyaz Un, Yumurta, Süt, Tereyağı, Kabartma Tozu, Tuz, Şeker | Mayasız, kabartma tozuyla |
 | 17 | **Bagel** (×2) | 2 Beyaz Un, Su, Tuz, Maya, Bal | Mayalandıktan sonra **kaynayan suda haşla** |
 
-**Bagel haşlama:** Altında ateş/kamp ateşi/magma olan su dolu kazana, mayalanmış bagel hamuru ile
-sağ tıkla → Haşlanmış Bagel. Su kaynamıyorsa uyarı verir.
+### Kaynayan kazan
+
+Altında ateş, kamp ateşi, lav veya magma bloğu olan kazan "kaynar":
+
+- **Bagel haşlama:** Su dolu kazana mayalanmış bagel hamuruyla sağ tıkla → Haşlanmış Bagel.
+- **Pekmez:** Kazana (dolu ya da boş) Meyve Şırasıyla sağ tıkla → şıra kaynayıp Pekmez olur.
+- **Tuz:** Su dolu kazana boş elle sağ tıkla → su bir seviye buharlaşır, 1 Tuz kalır.
+
+Kazan kaynamıyorsa uyarı verir.
 
 ## Malzemeler nereden gelir?
 
@@ -73,13 +80,13 @@ sağ tıkla → Haşlanmış Bagel. Su kaynamıyorsa uyarı verir.
 |---------|-------------------|
 | Çavdar / Mısır / Susam tohumu | Çimen, uzun çimen ve eğrelti otu kırınca düşer. Tarlaya ekilir, köylüler de eker |
 | Zeytin | Meşe ve koyu meşe yapraklarından düşer |
-| Tuz | Su kovasını Taş Fırında buharlaştır (3 tuz + boş kova) |
+| Tuz | Altında ateş olan su kazanına boş elle sağ tıkla (su buharlaşır; dolu kazan = 3 tuz) |
 | Maya | Tatlı Meyve + Şeker + Tam Buğday Unu + Su (×4) — meyve kabuğundaki yabani maya |
 | Kabartma Tozu | Tuz + Kalsit (×2) |
 | Tereyağı | Süt Kovası → 2 Tereyağı |
 | Yoğurt | Süt Kovası + 3 Kase → 3 Yoğurt |
 | Zeytinyağı | 4 Zeytin + Cam Şişe + El Değirmeni |
-| Pekmez | 4 Tatlı Meyve + Cam Şişe → Meyve Şırası, Taş Fırında kaynat → Pekmez |
+| Pekmez | 4 Tatlı Meyve + Cam Şişe → Meyve Şırası, kaynayan kazanda kaynat → Pekmez |
 | Çavdar / Mısır Unu | Çavdar veya Mısır + El Değirmeni |
 
 ## 🥚 Easter egg'ler

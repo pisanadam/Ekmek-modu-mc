@@ -140,12 +140,7 @@ public class StoneOvenBlockEntity extends CompatContainerBlockEntity implements 
 		} else {
 			current.grow(recipe.count());
 		}
-		if (input.is(Items.WATER_BUCKET)) {
-			// su buharlaştı, boş kova kalır
-			oven.items.set(SLOT_INPUT, new ItemStack(Items.BUCKET));
-		} else {
-			input.shrink(1);
-		}
+		input.shrink(1);
 	}
 
 	@Override

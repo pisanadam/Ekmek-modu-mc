@@ -5,12 +5,11 @@ import java.util.IdentityHashMap;
 import java.util.Map;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import org.jspecify.annotations.Nullable;
 
 /**
- * Taş fırın tarifleri. Ekmekler yalnızca taş fırında pişer;
- * normal fırın/tütsüleyicide pişirilemezler.
+ * Taş fırın tarifleri. Taş fırın yalnızca ekmek pişirir; ekmekler de
+ * yalnızca taş fırında pişer (normal fırın/tütsüleyicide pişirilemezler).
  */
 public final class BakingRecipes {
 	public record Baking(Item result, int count, int ticks) {
@@ -44,9 +43,5 @@ public final class BakingRecipes {
 		for (ModItems.BreadLine line : ModItems.BREADS) {
 			add(line.ovenInput(), line.bread(), 1, line.bakeTicks());
 		}
-		// Deniz/kaynak suyunu buharlaştırarak tuz elde etme (kova geri verilir)
-		add(Items.WATER_BUCKET, ModItems.SALT, 3, 600);
-		// Meyve şırasını kaynatıp koyulaştırarak pekmez yapma
-		add(ModItems.BERRY_MUST, ModItems.PEKMEZ, 1, 400);
 	}
 }
