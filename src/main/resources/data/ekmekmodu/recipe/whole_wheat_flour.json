@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:wheat",
+    "ekmekmodu:hand_mill"
+  ],
+  "result": {
+    "id": "ekmekmodu:whole_wheat_flour"
+  }
+}

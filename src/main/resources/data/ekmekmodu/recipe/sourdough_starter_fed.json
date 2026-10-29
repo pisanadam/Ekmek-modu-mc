@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ekmekmodu:whole_wheat_flour",
+    "minecraft:water_bucket",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "id": "ekmekmodu:sourdough_starter_fed"
+  }
+}

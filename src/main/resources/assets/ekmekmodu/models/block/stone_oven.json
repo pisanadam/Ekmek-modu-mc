@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "ekmekmodu:block/stone_oven_front",
+    "side": "ekmekmodu:block/stone_oven_side",
+    "top": "ekmekmodu:block/stone_oven_top"
+  }
+}

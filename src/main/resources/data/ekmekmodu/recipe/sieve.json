@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " S ",
+    "SRS",
+    " S "
+  ],
+  "key": {
+    "S": "minecraft:stick",
+    "R": "minecraft:string"
+  },
+  "result": {
+    "id": "ekmekmodu:sieve"
+  }
+}

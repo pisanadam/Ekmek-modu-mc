@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ekmekmodu:proofed_simit_dough",
+    "ekmekmodu:pekmez",
+    "ekmekmodu:sesame_seeds"
+  ],
+  "result": {
+    "id": "ekmekmodu:raw_simit"
+  }
+}

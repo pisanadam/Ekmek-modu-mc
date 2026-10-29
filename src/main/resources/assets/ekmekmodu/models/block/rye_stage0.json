@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "ekmekmodu:block/rye_stage0"
+  }
+}

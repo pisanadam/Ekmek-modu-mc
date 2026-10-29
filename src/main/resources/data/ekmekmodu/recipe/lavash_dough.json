@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ekmekmodu:white_flour",
+    "ekmekmodu:white_flour",
+    "minecraft:water_bucket",
+    "ekmekmodu:salt"
+  ],
+  "result": {
+    "id": "ekmekmodu:lavash_dough",
+    "count": 3
+  },
+  "group": "ekmekmodu:dough"
+}

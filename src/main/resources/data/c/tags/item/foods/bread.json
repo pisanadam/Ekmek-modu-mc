@@ -1,0 +1,21 @@
+{
+  "values": [
+    "ekmekmodu:sourdough_bread",
+    "ekmekmodu:whole_wheat_sourdough_bread",
+    "ekmekmodu:whole_wheat_bread",
+    "ekmekmodu:village_loaf",
+    "ekmekmodu:baguette",
+    "ekmekmodu:ciabatta",
+    "ekmekmodu:focaccia",
+    "ekmekmodu:rye_bread",
+    "ekmekmodu:brioche",
+    "ekmekmodu:challah",
+    "ekmekmodu:pita",
+    "ekmekmodu:naan",
+    "ekmekmodu:lavash",
+    "ekmekmodu:simit",
+    "ekmekmodu:pide",
+    "ekmekmodu:cornbread",
+    "ekmekmodu:bagel"
+  ]
+}

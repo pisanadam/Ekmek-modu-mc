@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "ekmekmodu",
+	"version": "${version}",
+	"name": "Ekmek Modu",
+	"description": "Gerçekçi ekmek yapımı: değirmende un öğüt, ekşi maya besle, hamuru yoğur, teknede mayalandır ve taş fırında pişir. Dünyanın en sevilen 17 ekmeği!",
+	"authors": [
+		"pisanadam"
+	],
+	"contact": {
+		"sources": "https://github.com/pisanadam/Ekmek-modu-mc"
+	},
+	"license": "MIT",
+	"icon": "assets/ekmekmodu/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.pisanadam.ekmek.EkmekModu"
+		]
+	},
+	"mixins": [
+		"ekmekmodu.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "${minecraft_dependency}",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

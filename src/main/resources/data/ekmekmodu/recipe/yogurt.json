@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:milk_bucket",
+    "minecraft:bowl",
+    "minecraft:bowl",
+    "minecraft:bowl"
+  ],
+  "result": {
+    "id": "ekmekmodu:yogurt",
+    "count": 3
+  }
+}

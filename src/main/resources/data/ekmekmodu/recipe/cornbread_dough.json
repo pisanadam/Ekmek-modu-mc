@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ekmekmodu:corn_flour",
+    "ekmekmodu:corn_flour",
+    "ekmekmodu:white_flour",
+    "#minecraft:eggs",
+    "minecraft:milk_bucket",
+    "ekmekmodu:butter",
+    "ekmekmodu:baking_soda",
+    "ekmekmodu:salt",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "id": "ekmekmodu:cornbread_dough"
+  },
+  "group": "ekmekmodu:dough"
+}

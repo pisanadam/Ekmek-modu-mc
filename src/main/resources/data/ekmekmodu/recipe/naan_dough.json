@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ekmekmodu:white_flour",
+    "ekmekmodu:white_flour",
+    "ekmekmodu:yogurt",
+    "ekmekmodu:butter",
+    "ekmekmodu:salt",
+    "ekmekmodu:yeast"
+  ],
+  "result": {
+    "id": "ekmekmodu:naan_dough",
+    "count": 2
+  },
+  "group": "ekmekmodu:dough"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ekmekmodu:rye",
+    "ekmekmodu:hand_mill"
+  ],
+  "result": {
+    "id": "ekmekmodu:rye_flour"
+  }
+}

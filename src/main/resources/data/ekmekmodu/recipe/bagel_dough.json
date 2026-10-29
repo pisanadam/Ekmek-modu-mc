@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ekmekmodu:white_flour",
+    "ekmekmodu:white_flour",
+    "minecraft:water_bucket",
+    "ekmekmodu:salt",
+    "ekmekmodu:yeast",
+    "minecraft:honey_bottle"
+  ],
+  "result": {
+    "id": "ekmekmodu:bagel_dough",
+    "count": 2
+  },
+  "group": "ekmekmodu:dough"
+}

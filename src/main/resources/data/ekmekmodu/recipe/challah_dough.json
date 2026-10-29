@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ekmekmodu:white_flour",
+    "ekmekmodu:white_flour",
+    "#minecraft:eggs",
+    "#minecraft:eggs",
+    "minecraft:honey_bottle",
+    "ekmekmodu:olive_oil",
+    "minecraft:water_bucket",
+    "ekmekmodu:yeast",
+    "ekmekmodu:salt"
+  ],
+  "result": {
+    "id": "ekmekmodu:challah_dough"
+  },
+  "group": "ekmekmodu:dough"
+}

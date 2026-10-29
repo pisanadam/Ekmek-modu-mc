@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ekmekmodu:corn",
+    "ekmekmodu:hand_mill"
+  ],
+  "result": {
+    "id": "ekmekmodu:corn_flour"
+  }
+}

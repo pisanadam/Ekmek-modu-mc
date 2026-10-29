@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ekmekmodu:rye_flour",
+    "ekmekmodu:rye_flour",
+    "ekmekmodu:white_flour",
+    "minecraft:water_bucket",
+    "ekmekmodu:salt",
+    "ekmekmodu:sourdough_starter_active"
+  ],
+  "result": {
+    "id": "ekmekmodu:rye_dough"
+  },
+  "group": "ekmekmodu:dough"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ekmekmodu:salt",
+    "minecraft:calcite"
+  ],
+  "result": {
+    "id": "ekmekmodu:baking_soda",
+    "count": 2
+  }
+}

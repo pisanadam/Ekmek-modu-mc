@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "T",
+    "S",
+    "S"
+  ],
+  "key": {
+    "T": "minecraft:stick",
+    "S": "minecraft:smooth_stone_slab"
+  },
+  "result": {
+    "id": "ekmekmodu:hand_mill"
+  }
+}

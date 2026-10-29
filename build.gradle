@@ -1,0 +1,83 @@
+plugins {
+	id 'net.fabricmc.fabric-loom' version "${loom_version}"
+	id 'maven-publish'
+}
+
+// Seçilen Minecraft sürümüne ait özellikleri yükle (versions/<mc>.properties)
+def target = project.property('mc').toString()
+def targetProps = new Properties()
+file("versions/${target}.properties").withInputStream { targetProps.load(it) }
+targetProps.each { k, v -> project.ext.set(k.toString(), v.toString()) }
+
+version = "${project.mod_version}+mc${target}"
+group = project.maven_group
+
+base {
+	archivesName = project.archives_base_name
+}
+
+repositories {
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+}
+
+// Sürüme özel uyumluluk katmanı: src/mc<compat_dir>/java (com.pisanadam.ekmek.compat)
+// ve sürüme özel veri: src/mc<compat_dir>/resources (loot tabloları)
+sourceSets {
+	main {
+		java {
+			srcDir "src/mc${project.compat_dir}/java"
+		}
+		resources {
+			srcDir "src/mc${project.compat_dir}/resources"
+		}
+	}
+}
+
+processResources {
+	def props = [
+		version             : project.version,
+		minecraft_dependency: project.minecraft_dependency,
+		loader_version      : project.loader_version
+	]
+	inputs.properties props
+	filesMatching("fabric.mod.json") {
+		expand props
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 25
+	it.options.encoding = 'UTF-8'
+}
+
+java {
+	withSourcesJar()
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(25)
+	}
+	sourceCompatibility = JavaVersion.VERSION_25
+	targetCompatibility = JavaVersion.VERSION_25
+}
+
+jar {
+	inputs.property "archivesName", project.base.archivesName
+	from("LICENSE") {
+		rename { "${it}_${inputs.properties.archivesName}" }
+	}
+}
+
+// İstemci oyun testleri: ./gradlew runClientGameTest (ekran görüntüleri: build/run/clientGameTest/screenshots)
+fabricApi {
+	configureTests {
+		createSourceSet = true
+		modId = "ekmekmodu-test"
+		enableGameTests = false
+		enableClientGameTests = true
+		eula = true
+	}
+}

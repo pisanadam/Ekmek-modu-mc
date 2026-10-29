@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ekmekmodu:white_flour",
+    "ekmekmodu:white_flour",
+    "#minecraft:eggs",
+    "#minecraft:eggs",
+    "ekmekmodu:butter",
+    "minecraft:milk_bucket",
+    "minecraft:sugar",
+    "ekmekmodu:yeast",
+    "ekmekmodu:salt"
+  ],
+  "result": {
+    "id": "ekmekmodu:brioche_dough"
+  },
+  "group": "ekmekmodu:dough"
+}

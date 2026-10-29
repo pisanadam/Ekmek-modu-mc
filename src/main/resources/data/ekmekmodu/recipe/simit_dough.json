@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ekmekmodu:white_flour",
+    "ekmekmodu:white_flour",
+    "minecraft:water_bucket",
+    "ekmekmodu:salt",
+    "ekmekmodu:yeast",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "id": "ekmekmodu:simit_dough",
+    "count": 2
+  },
+  "group": "ekmekmodu:dough"
+}

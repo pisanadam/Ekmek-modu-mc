@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ekmekmodu:corn"
+  ],
+  "result": {
+    "id": "ekmekmodu:corn_seeds",
+    "count": 3
+  }
+}

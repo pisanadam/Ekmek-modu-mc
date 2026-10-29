@@ -1,0 +1,15 @@
+{
+	"schemaVersion": 1,
+	"id": "ekmekmodu-test",
+	"version": "1.0.0",
+	"name": "Ekmek Modu Testleri",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-client-gametest": [
+			"com.pisanadam.ekmek.test.EkmekClientGameTest"
+		]
+	},
+	"depends": {
+		"ekmekmodu": "*"
+	}
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ekmekmodu:white_flour",
+    "ekmekmodu:white_flour",
+    "minecraft:water_bucket",
+    "ekmekmodu:salt",
+    "ekmekmodu:yeast",
+    "#minecraft:eggs",
+    "ekmekmodu:sesame_seeds"
+  ],
+  "result": {
+    "id": "ekmekmodu:pide_dough"
+  },
+  "group": "ekmekmodu:dough"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SSS",
+    "B B",
+    "SCS"
+  ],
+  "key": {
+    "S": "minecraft:stone_bricks",
+    "B": "minecraft:brick",
+    "C": "minecraft:campfire"
+  },
+  "result": {
+    "id": "ekmekmodu:stone_oven"
+  }
+}

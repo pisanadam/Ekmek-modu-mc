@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "ekmekmodu:whole_wheat_flour",
+    "ekmekmodu:whole_wheat_flour",
+    "minecraft:water_bucket",
+    "ekmekmodu:salt",
+    "ekmekmodu:yeast",
+    "minecraft:honey_bottle"
+  ],
+  "result": {
+    "id": "ekmekmodu:whole_wheat_dough"
+  },
+  "group": "ekmekmodu:dough"
+}

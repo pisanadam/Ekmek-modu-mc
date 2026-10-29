@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:sweet_berries",
+    "minecraft:sugar",
+    "ekmekmodu:whole_wheat_flour",
+    "minecraft:water_bucket"
+  ],
+  "result": {
+    "id": "ekmekmodu:yeast",
+    "count": 4
+  }
+}
